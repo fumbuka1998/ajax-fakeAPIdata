@@ -3,8 +3,8 @@ let getData = document.getElementById("getdata");
 getData.addEventListener('click', ()=>{
     // alert(1);
     let xhr = new XMLHttpRequest;
+    // xhr.open('GET', 'https://newsapi.org/v2/top-headlines/sources?apiKey=b6cb5d51f2fa4339aba56554b788dd2f', true);
     xhr.open('GET', 'https://fakestoreapi.com/products', true);
-
     xhr.onload = function(){
 
         if(this.status === 200){
