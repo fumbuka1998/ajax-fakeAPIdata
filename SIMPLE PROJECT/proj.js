@@ -1,4 +1,5 @@
 let getData = document.getElementById("getdata");
+let printData = document.getElementById("printdata");
 
 getData.addEventListener('click', ()=>{
     // alert(1);
@@ -38,3 +39,22 @@ getData.addEventListener('click', ()=>{
 
     xhr.send();
 });
+
+
+printData.addEventListener('click', ()=>{
+    // alert(8);
+
+    var doc = new jsPDF();
+    var ul = '#mytable-data';
+    var listContent = $(ul).html();
+
+    html2canvas($(ul)[0]).then(function(canvas) {
+            // Add the canvas to the PDF document
+            doc.addImage(canvas.toDataURL('image/jpeg'), 'JPEG', 10, 10, 180, 240);
+        
+            // Save the PDF document
+            doc.save('list.pdf');
+          });
+});
+
+
