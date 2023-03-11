@@ -29,7 +29,7 @@
         <a
           class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
           href="#"
-          >FixtureGen</a
+          >Fixture<span class="text-primary">Generator</span></a
         >
         <button
           class="navbar-toggler"
@@ -70,9 +70,7 @@
               <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i>  profile</a></li>
                 <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-left"></i>  logout</a></li>
-                <li>
-                  <a class="dropdown-item" href="#"><i class="bi bi-gear-fill"></i>  settings</a>
-                </li>
+                
               </ul>
             </li>
           </ul>
@@ -122,6 +120,13 @@
               </a>
               <div class="collapse" id="layouts">
                 <ul class="navbar-nav ps-3">
+                  <li>
+                    <a href="#" class="nav-link px-3">
+                      <span class="me-2"
+                        ><i class="bi bi-person-badge-fill"></i></span>
+                      <span>Board Members</span>
+                    </a>
+                  </li>
                   
                   <li>
                     <a href="#" class="nav-link px-3">
@@ -135,6 +140,14 @@
                       <span class="me-2"
                         ><i class="bi bi-diamond"></i></span>
                       <span>Referees</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#" class="nav-link px-3">
+                      <span class="me-2"
+                        ><i class="bi bi-bag-fill"></i></span>
+                      <span>Stadiums</span>
                     </a>
                   </li>
                 </ul>
@@ -151,7 +164,7 @@
             <li>
               <a href="#" class="nav-link px-3">
                 <span class="me-2"><i class="bi bi-book-fill"></i></span>
-                <span>Pages</span>
+                <span>Match Reports</span>
               </a>
             </li>
             <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
@@ -181,14 +194,14 @@
     <main class="mt-5 pt-3">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 fw-bold">
             <h4>Dashboard</h4>
           </div>
         </div>
         <div class="row">
           <div class="col-md-3 mb-3">
             <div class="card bg-primary text-white h-100">
-              <div class="card-body py-5">Clubs and Teams</div>
+              <div class="card-body py-5">Sports Teams</div>
               <div class="card-footer d-flex">
                 View Details
                 <span class="ms-auto">
@@ -199,7 +212,7 @@
           </div>
           <div class="col-md-3 mb-3">
             <div class="card bg-warning text-dark h-100">
-              <div class="card-body py-5">Referees</div>
+              <div class="card-body py-5">Board Members</div>
               <div class="card-footer d-flex">
                 View Details
                 <span class="ms-auto">
@@ -221,7 +234,7 @@
           </div>
           <div class="col-md-3 mb-3">
             <div class="card bg-danger text-white h-100">
-              <div class="card-body py-5">Red Cards</div>
+              <div class="card-body py-5">Referees</div>
               <div class="card-footer d-flex">
                 View Details
                 <span class="ms-auto">
@@ -231,19 +244,19 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col-md-6 mb-3">
+        <div class="row">
+          <div class="col-md-12 mb-3">
             <div class="card h-100">
-              <div class="card-header">
+              <div class="card-header fw-bold">
                 <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-                Area Chart Example
+                Generated Matches
               </div>
               <div class="card-body">
-                <canvas class="chart" width="400" height="200"></canvas>
+                
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-3">
+          <!-- <div class="col-md-6 mb-3">
             <div class="card h-100">
               <div class="card-header">
                 <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
