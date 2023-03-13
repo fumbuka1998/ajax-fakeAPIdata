@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 body,
 button {
   font-family: "Inter", sans-serif;
@@ -28,7 +28,7 @@ button {
     margin-left: var(--offcanvas-width);
   }
   /* this is to remove the backdrop */
-  .offcanvas-backdrop::before {
+  /* .offcanvas-backdrop::before {
     display: none;
   }
   .sidebar-nav {
@@ -37,5 +37,48 @@ button {
     visibility: visible !important;
     height: calc(100% - var(--topNavbarHeight));
     top: var(--topNavbarHeight);
+  }
+} */ 
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+.book {
+  --color:#fff;
+  --duration: 6.8s;
+  width: 32px;
+  height: 12px;
+  position: relative;
+  margin: 32px 0 0 0;
+
+  /* //demo */
+  zoom: 1.5;
+}
+
+.inner{
+  width: 32px;
+  height: 12px;
+  position: relative;
+  transform-origin: 2px 2px;
+  transform: rotateZ(-90deg);
+  animation: book var(--duration) ease infinite;
+}
+
+.left,
+.height{
+  width: 60px;
+  height: 4px;
+  top: 0;
+  border-radius: 2px;
+  background: var(--color);
+  position: absolute;
+  &:before{
+      content: '';
+      width: 48px;
+      height: 4px;
+      border-radius: 2px;
+      background: inherit;
+      position: absolute;
+      top: -10px;
+      left: 6px;
   }
 }
