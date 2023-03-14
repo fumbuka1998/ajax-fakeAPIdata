@@ -10,8 +10,10 @@ body{
     align-items: center;
     justify-content: center;
     background-image: url(field3.png);
+    backdrop-filter: blur(5px);
     background-position: center;
     background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .login{
@@ -19,7 +21,8 @@ body{
     height:min-content;
     padding: 20px;
     border-radius: 15px;
-    background: #c5c9fc;
+    background: #f6f6f8;
+    backdrop-filter: blur(5px);
 }
 
 .form-header{
