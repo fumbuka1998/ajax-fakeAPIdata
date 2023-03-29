@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>League Fixture Generator</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>League Fixture Generator</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="team-count">Number of Teams:</label>
+					<input type="number" class="form-control" id="team-count" placeholder="Enter number of teams">
+				</div>
+				<button type="submit" class="btn btn-primary" id="generate-fixtures-btn">Generate Fixtures</button>
+			</div>
+			<div class="col-md-8">
+				<table class="table table-striped" id="fixtures-table">
+					<thead>
+						<tr>
+							<th>Match</th>
+							<th>Home Team</th>
+							<th>Away Team</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Custom JS -->
+	<script src="script.js"></script>
+</body>
+</html>
